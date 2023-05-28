@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.UserForm {
+  position: relative;
+
+  background: #000;
+  flex: 0 0 300px;
+  background: #e7e7e7;
+}
+
+.menuList {
+  display: flex;
+  margin: 0 5px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menuItem {
+  flex: 0 1 200px;
+  margin: 15px 0;
+}
+
+.totalPrice {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%);
+
+  background: #8931b3;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 22px;
+}
+
+.submit {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 15px;
+  background: #9426c7;
+  border-radius: 5px;
+
+  &:hover {
+    background: #5126c7;
+  }
+}

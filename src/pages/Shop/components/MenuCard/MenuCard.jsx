@@ -19,6 +19,7 @@ export const MenuCard = ({ description, dish_name, id, price, addToOrder }) => {
           <input
             type="number"
             name="count"
+            min="1"
             id={id}
             value={count}
             onChange={onChange}
@@ -31,7 +32,7 @@ export const MenuCard = ({ description, dish_name, id, price, addToOrder }) => {
             className={s.buy}
             onClick={() => addToOrder(id, dish_name, price, count)}
           >
-            Add to Cart{' '}
+            Add to Cart
           </button>
         </li>
       </ul>

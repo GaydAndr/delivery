@@ -4,6 +4,7 @@
 }
 
 .shopList {
+  position: relative;
   flex: 0 0 300px;
   background: #e7e7e7;
 }
@@ -27,4 +28,19 @@
   composes: shopLink;
   color: #8931b3;
   border-bottom: 2px solid #000;
+}
+
+.totalPrice {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+
+  background: #8931b3;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 22px;
 }

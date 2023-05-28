@@ -18,16 +18,12 @@ const storeSlice = createSlice({
       })
       .addCase(getStores.fulfilled, (state, { payload }) => {
         state.storesData = payload;
-        // payload.map((i) => (state.storeName = i.shop));
         state.loading = false;
       })
       .addCase(getStores.rejected, (state, _) => {
         state.loading = false;
       });
   },
-  // reducers: {
-  //
-  // },
 });
 
 export const storesReducer = storeSlice.reducer;

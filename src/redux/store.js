@@ -1,4 +1,4 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import {
   persistStore,
   persistReducer,
@@ -21,7 +21,7 @@ const persistConfig = {
 const persistOrderConfig = {
   key: 'orders',
   storage,
-  whitelist: ['preOrders', 'oldOrder'],
+  whitelist: ['preOrders', 'oldOrder', 'total_price'],
 };
 
 const persistedStores = persistReducer(persistConfig, storesReducer);

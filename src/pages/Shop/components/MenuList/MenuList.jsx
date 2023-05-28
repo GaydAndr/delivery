@@ -5,6 +5,7 @@ import { orderSelector } from './../../../../redux/order/order-selectors';
 import {
   addToPreOrder,
   changeCount,
+  countPrice,
 } from '../../../../redux/order/order-slice';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -24,11 +25,14 @@ export const MenuList = ({ menu }) => {
       orderItem.count = newCount;
 
       dispatch(changeCount(orderItem));
+      dispatch(countPrice());
+
       return;
     }
-    console.log(1);
 
-    return dispatch(addToPreOrder(orderItem));
+    dispatch(addToPreOrder(orderItem));
+    dispatch(countPrice());
+    return;
   };
   return (
     <>
