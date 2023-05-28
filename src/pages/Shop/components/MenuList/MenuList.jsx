@@ -1,4 +1,3 @@
-// import { useSelector } from 'react-redux';
 import { MenuCard } from '../MenuCard/MenuCard';
 import s from './MenuList.module.scss';
 import { orderSelector } from './../../../../redux/order/order-selectors';
