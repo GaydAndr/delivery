@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.shopList {
+  flex: 0 0 300px;
+  background: #e7e7e7;
+}
+
+.menuList {
+  flex: 0 1auto;
+  flex-grow: 0;
+  overflow: auto;
+}
+
+.shopLink {
+  display: block;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  text-align: center;
+  margin: 5px 0;
+}
+.active {
+  composes: shopLink;
+  color: #8931b3;
+  border-bottom: 2px solid #000;
+}

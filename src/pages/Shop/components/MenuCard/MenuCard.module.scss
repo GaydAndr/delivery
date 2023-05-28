@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #d6d6d6;
+}
+
+.title {
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+}
+// .description {
+// }
+
+.priceAndBuy {
+  display: flex;
+  justify-content: space-between;
+  align-self: end;
+  width: 100%;
+  color: #fff;
+}
+.price {
+  font-size: 18px;
+  padding: 5px 5px;
+
+  background: #777777;
+  border-radius: 5px;
+}
+.count {
+  align-self: end;
+  margin: 5px 0;
+}
+
+.buy {
+  padding: 5px 5px;
+  background: #9426c7;
+  border-radius: 5px;
+
+  &:hover {
+    background: #5126c7;
+  }
+}

@@ -1,0 +1,24 @@
+.nav {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  height: 60px;
+}
+
+.navLink {
+  display: block;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+}
+.active {
+  composes: navLink;
+  color: #61dafb;
+  border-bottom: 2px solid #000;
+}
